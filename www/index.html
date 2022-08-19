@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>猫の実態</title>
+        <meta name="description" content="猫の好きなもの、日々の生活の紹介">
+        <meta name="viewport" content="width=device-width" >
+        <style>
+            h1 {
+                color: rgba(246, 41, 41, 0.87);
+                font-family: YuGothic, sans-serif;
+                text-align: justify;
+            }
+            p { font-size: 18px;}
+            body {
+                background-image: url(images/bg.png);
+                background-repeat: repeat-x;
+            }
+
+            ul {
+                list-style-type: square url(images/star.png) outside;
+            }
+
+            .item {
+                background: #0bd;
+                color: #fff;
+                margin: 10px;
+                padding: 10px;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: row-serverse;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                /* align-items: flex-start; */
+                align-content: space-between;
+            }
+
+            .container2 {
+                display: grid;
+                /* grid-template-columns: 200px 200px 200px 200px; */
+                grid-template-columns: lfr lfr lfr lfr;
+                gap: 10px;
+            }
+
+            .item2 {
+                background: #0bd;
+                color: #ffe;
+                padding: 10px
+            }
+        
+        </style>
+    </head>
+    <body>
+        <h1>猫の一日</h1>
+        <p>ひたすら寝ています</p>
+        <p>毎日がスペシャル</p>
+
+        <div>要素の幅とテキストの間に余白をつけます</div>
+
+        <ul>
+            <li>
+                HTMLの基礎
+            </li>
+            <li>
+                CSSの基礎
+            </li>
+            <li>
+                デザインの基礎
+            </li>
+        </ul>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+        <div class="container2">
+            <div class="item2">1</div>
+            <div class="item2">2</div>
+            <div class="item2">3</div>
+            <div class="item2">4</div>
+        </div>
+    </body>
+</html>
