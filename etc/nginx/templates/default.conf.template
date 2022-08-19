@@ -1,9 +1,6 @@
 server {
     listen       ${NGINX_PORT};
     listen  [::]:${NGINX_PORT};
-    # 本番はCloud runなのでfirewallにより80番は消える。
-    listen       80;
-    listen  [::]:80;
     server_name  ${NGINX_HOST};
 
     #access_log  /var/log/nginx/host.access.log  main;
